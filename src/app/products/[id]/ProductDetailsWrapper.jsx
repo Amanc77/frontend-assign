@@ -39,7 +39,7 @@ function ProductDetailsWrapper({ product }) {
 
     // keep only last 3
     storedProduct = storedProduct.slice(0, 3);
-    console.log("storedProduct product are...", storedProduct);
+    console.log("stored product are...", storedProduct);
 
     localStorage.setItem("recentlyViewed", JSON.stringify(storedProduct));
   }, [product]);
@@ -51,6 +51,8 @@ function ProductDetailsWrapper({ product }) {
       return;
     }
     addToCart(product, selectedColor, selectedSize);
+    // console.log(`${product.name} is added in Cart..`);
+    alert(`${product.name}  ${selectedColor} Color is added in Cart..`);
   };
 
   return (

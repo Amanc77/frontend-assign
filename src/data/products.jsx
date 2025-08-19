@@ -33,7 +33,7 @@ export const products = [
     imageUrl: "https://placehold.co/600x400/FFE4E6/EF4444?text=Running+Shoes",
     variants: [
       { color: "Black", hex: "#000000", sizes: ["7", "8", "9", "10"] },
-      { color: "White", hex: "#FFFFFF", sizes: ["8", "9", "10", "11"] },
+      { color: "White", hex: "#b3a7a7ff", sizes: ["8", "9", "10", "11"] },
     ],
   },
   {
