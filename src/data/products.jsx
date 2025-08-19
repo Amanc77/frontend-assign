@@ -52,7 +52,7 @@ export const products = [
 export const fetchProductById = async (id) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      const product = products.find((p) => p.id === id); //bug 1 fixed..
+      const product = products.find((p) => p.id === String(id)); //bug 1 fixed..
       resolve(product);
     }, 500); // simulate network delay
   });
